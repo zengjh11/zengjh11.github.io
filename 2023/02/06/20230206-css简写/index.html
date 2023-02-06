@@ -19,27 +19,27 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"zengjh11.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.14.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="a-dropdown 问题记录a-dropdown 嵌套时阻止默认事件需在外层再嵌套一个 span 标签 12345&lt;span @click.stop&gt;    &lt;a-dropdown&gt;        ...    &lt;&#x2F;a-dropdown&gt;&lt;&#x2F;span&gt;">
+    <meta name="description" content="css 简写新增了水平和垂直两个方向的 css 属性 例如之前的 margin 1234margin-topmargin-rightmargin-bottommargin-left  现在可以使用 1margin-inline  改变水平方向的 margin 1margin-block  改变垂直方向的 margin  inset 属性inset 属性是 top&#x2F;right&#x2F;bottom&#x2F;left">
 <meta property="og:type" content="article">
-<meta property="og:title" content="关于a-dropdown的问题小计">
-<meta property="og:url" content="https://zengjh11.github.io/2023/01/30/20230130/index.html">
+<meta property="og:title" content="css简写">
+<meta property="og:url" content="https://zengjh11.github.io/2023/02/06/20230206-css%E7%AE%80%E5%86%99/index.html">
 <meta property="og:site_name" content="zengjh&#39;s Notes">
-<meta property="og:description" content="a-dropdown 问题记录a-dropdown 嵌套时阻止默认事件需在外层再嵌套一个 span 标签 12345&lt;span @click.stop&gt;    &lt;a-dropdown&gt;        ...    &lt;&#x2F;a-dropdown&gt;&lt;&#x2F;span&gt;">
+<meta property="og:description" content="css 简写新增了水平和垂直两个方向的 css 属性 例如之前的 margin 1234margin-topmargin-rightmargin-bottommargin-left  现在可以使用 1margin-inline  改变水平方向的 margin 1margin-block  改变垂直方向的 margin  inset 属性inset 属性是 top&#x2F;right&#x2F;bottom&#x2F;left">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-01-30T02:35:41.000Z">
-<meta property="article:modified_time" content="2023-01-30T02:35:41.000Z">
+<meta property="article:published_time" content="2023-02-06T06:01:35.000Z">
+<meta property="article:modified_time" content="2023-02-06T06:01:35.000Z">
 <meta property="article:author" content="zengjh">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://zengjh11.github.io/2023/01/30/20230130/">
+<link rel="canonical" href="https://zengjh11.github.io/2023/02/06/20230206-css%E7%AE%80%E5%86%99/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://zengjh11.github.io/2023/01/30/20230130/","path":"2023/01/30/20230130/","title":"关于a-dropdown的问题小计"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://zengjh11.github.io/2023/02/06/20230206-css%E7%AE%80%E5%86%99/","path":"2023/02/06/20230206-css简写/","title":"css简写"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>关于a-dropdown的问题小计 | zengjh's Notes</title>
+<title>css简写 | zengjh's Notes</title>
   
 
 
@@ -112,7 +112,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#a-dropdown-%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95"><span class="nav-number">1.</span> <span class="nav-text">a-dropdown 问题记录</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#css-%E7%AE%80%E5%86%99"><span class="nav-number">1.</span> <span class="nav-text">css 简写</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#inset-%E5%B1%9E%E6%80%A7"><span class="nav-number">1.1.</span> <span class="nav-text">inset 属性</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -168,7 +168,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://zengjh11.github.io/2023/01/30/20230130/">
+    <link itemprop="mainEntityOfPage" href="https://zengjh11.github.io/2023/02/06/20230206-css%E7%AE%80%E5%86%99/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpeg">
@@ -181,12 +181,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="关于a-dropdown的问题小计 | zengjh's Notes">
+      <meta itemprop="name" content="css简写 | zengjh's Notes">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          关于a-dropdown的问题小计
+          css简写
         </h1>
 
         <div class="post-meta-container">
@@ -197,7 +197,7 @@
       </span>
       <span class="post-meta-item-text">发表于</span>
 
-      <time title="创建时间：2023-01-30 10:35:41" itemprop="dateCreated datePublished" datetime="2023-01-30T10:35:41+08:00">2023-01-30</time>
+      <time title="创建时间：2023-02-06 14:01:35" itemprop="dateCreated datePublished" datetime="2023-02-06T14:01:35+08:00">2023-02-06</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -205,7 +205,7 @@
       </span>
       <span class="post-meta-item-text">分类于</span>
         <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/" itemprop="url" rel="index"><span itemprop="name">问题记录</span></a>
+          <a href="/categories/css/" itemprop="url" rel="index"><span itemprop="name">css</span></a>
         </span>
     </span>
 
@@ -219,8 +219,32 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h1 id="a-dropdown-问题记录"><a href="#a-dropdown-问题记录" class="headerlink" title="a-dropdown 问题记录"></a>a-dropdown 问题记录</h1><p>a-dropdown 嵌套时阻止默认事件需在外层再嵌套一个 span 标签</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;span @click.stop&gt;</span><br><span class="line">    &lt;a-dropdown&gt;</span><br><span class="line">        ...</span><br><span class="line">    &lt;/a-dropdown&gt;</span><br><span class="line">&lt;/span&gt;</span><br></pre></td></tr></table></figure>
+        <h1 id="css-简写"><a href="#css-简写" class="headerlink" title="css 简写"></a>css 简写</h1><p>新增了水平和垂直两个方向的 css 属性</p>
+<p>例如之前的 margin</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">margin-top</span><br><span class="line">margin-right</span><br><span class="line">margin-bottom</span><br><span class="line">margin-left</span><br></pre></td></tr></table></figure>
+
+<p>现在可以使用</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">margin-inline</span><br></pre></td></tr></table></figure>
+
+<p>改变水平方向的 margin</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">margin-block</span><br></pre></td></tr></table></figure>
+
+<p>改变垂直方向的 margin</p>
+<hr>
+<h2 id="inset-属性"><a href="#inset-属性" class="headerlink" title="inset 属性"></a>inset 属性</h2><p>inset 属性是 top/right/bottom/left 属性的简写<br>之前的固定定位</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">position: fixed;</span><br><span class="line">top: 0;</span><br><span class="line">right: 0;</span><br><span class="line">bottom: 0;</span><br><span class="line">left: 0;</span><br></pre></td></tr></table></figure>
+
+<p>现在这样使用</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">position: fixed;</span><br><span class="line">inset: 0;</span><br></pre></td></tr></table></figure>
+
+<p>如果是水平方向</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">inset-inline: 0;</span><br></pre></td></tr></table></figure>
+
+<p>垂直方向</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">inset-block: 0;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<p>感谢<a target="_blank" rel="noopener" href="https://www.zhangxinxu.com/">鑫空间</a></p>
 
     </div>
 
@@ -234,14 +258,11 @@
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2023/01/28/one/" rel="prev" title="建站第一篇">
-                  <i class="fa fa-chevron-left"></i> 建站第一篇
+                <a href="/2023/02/05/20230205-REST-API/" rel="prev" title="REST-API">
+                  <i class="fa fa-chevron-left"></i> REST-API
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2023/01/31/20230131-%E7%BA%AFcss%E5%AE%9E%E7%8E%B0%E8%B6%85%E9%95%BF%E6%97%B6%E6%89%8D%E6%98%BE%E7%A4%BAtitle/" rel="next" title="纯css实现超长时才显示title">
-                  纯css实现超长时才显示title <i class="fa fa-chevron-right"></i>
-                </a>
             </div>
           </div>
     </footer>
