@@ -122,7 +122,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">13</span>
+          <span class="site-state-item-count">14</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -153,6 +153,95 @@
     </div>
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://zengjh11.github.io/2023/02/01/20230201-Node-web%E6%9C%8D%E5%8A%A1%E5%99%A8/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/ava.png">
+      <meta itemprop="name" content="zengjh">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="zengjh's Notes">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | zengjh's Notes">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2023/02/01/20230201-Node-web%E6%9C%8D%E5%8A%A1%E5%99%A8/" class="post-title-link" itemprop="url">Node.js-web服务器</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2023-02-01 10:37:46" itemprop="dateCreated datePublished" datetime="2023-02-01T10:37:46+08:00">2023-02-01</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Node-js/" itemprop="url" rel="index"><span itemprop="name">Node.js</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="Node-js-web-服务器"><a href="#Node-js-web-服务器" class="headerlink" title="Node.js-web 服务器"></a>Node.js-web 服务器</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var http = require(&#x27;http&#x27;);</span><br><span class="line">// 创建服务器</span><br><span class="line">http.createServer( function (request, response) &#123;</span><br><span class="line">   response.end();</span><br><span class="line">&#125;).listen(8080);</span><br></pre></td></tr></table></figure>
+
+<p>在 8080 端口创建了一个服务<br>配合 fs 模块读取目录下的入口文件</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">var http = require(&#x27;http&#x27;);</span><br><span class="line">var fs = require(&#x27;fs&#x27;);</span><br><span class="line">var url = require(&#x27;url&#x27;);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">// 创建服务器</span><br><span class="line">http.createServer( function (request, response) &#123;</span><br><span class="line">   // 从文件系统中读取请求的文件内容</span><br><span class="line">   fs.readFile(&#x27;index.html&#x27;, function (err, data) &#123;</span><br><span class="line">      if (err) &#123;</span><br><span class="line">         console.log(err);</span><br><span class="line">         // HTTP 状态码: 404 : NOT FOUND</span><br><span class="line">         response.writeHead(404, &#123;&#x27;Content-Type&#x27;: &#x27;text/html&#x27;&#125;);</span><br><span class="line">      &#125;else&#123;</span><br><span class="line">         // HTTP 状态码: 200 : OK</span><br><span class="line">         response.writeHead(200, &#123;&#x27;Content-Type&#x27;: &#x27;text/html&#x27;&#125;);</span><br><span class="line"></span><br><span class="line">         // 响应文件内容</span><br><span class="line">         response.write(data.toString());</span><br><span class="line">      &#125;</span><br><span class="line">      //  发送响应数据</span><br><span class="line">      response.end();</span><br><span class="line">   &#125;);</span><br><span class="line">&#125;).listen(8080);</span><br></pre></td></tr></table></figure>
+
+<p>目录内创建 index.html<br>使用默认模板</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang=&quot;en&quot;&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;</span><br><span class="line">    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</span><br><span class="line">    &lt;title&gt;title&lt;/title&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;h1&gt;标题!!!&lt;/h1&gt;</span><br><span class="line">    &lt;p&gt;内容内容内容&lt;/p&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+
+<p>访问 <a target="_blank" rel="noopener" href="http://localhost:8080/">http://localhost:8080/</a></p>
+<p><img src="../images/20230201.jpg" alt="图片"></p>
+<hr>
+<p>大功告成</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
