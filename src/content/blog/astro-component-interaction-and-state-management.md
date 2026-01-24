@@ -1,8 +1,9 @@
 ---
-title: '深入理解 Astro UI 框架的组件交互与状态管理'
-description: '探索 Astro 中不同 UI 框架组件的交互方式以及如何有效管理前端状态。'
-pubDate: 'Jan 24 2026'
-heroImage: '/blog-placeholder-1.jpg'
+title: "深入理解 Astro UI 框架的组件交互与状态管理"
+description: "探索 Astro 中不同 UI 框架组件的交互方式以及如何有效管理前端状态。"
+date: 2026-01-24
+tags: ["astro", "组件交互", "状态管理"]
+author: "博客作者"
 ---
 
 Astro 是一个现代化的、以内容为中心的网站构建工具，它允许开发者使用自己喜欢的 UI 框架（如 React, Vue, Svelte）来构建独立组件。虽然 Astro 默认以零 JavaScript 的方式提供出色的性能，但在需要客户端交互时，理解组件之间的交互和状态管理变得尤为重要。
