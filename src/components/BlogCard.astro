@@ -13,7 +13,7 @@ const { title, description, date, slug, tags } = Astro.props;
 <article class="blog-card">
   <header class="blog-card-header">
     <h3 class="blog-card-title">
-      <a href={`/blog/${slug}`}>{title}</a>
+      <a href={`${import.meta.env.BASE_URL}blog/${slug}`}>{title}</a>
     </h3>
     <div class="blog-card-meta">
       <span class="blog-card-date"
