@@ -3,7 +3,7 @@ title: "Vue.js 3完全指南"
 description: "学习Vue.js 3的基本概念、核心特性和最佳实践。"
 date: 2024-03-06
 tags: ["Vue.js", "前端框架", "JavaScript"]
-author: "博客作者"
+author: "zeng"
 ---
 
 Vue.js 是一个渐进式 JavaScript 框架，用于构建用户界面。Vue.js 3 是 Vue.js 的最新版本，带来了许多新特性和性能改进。本文将介绍 Vue.js 3 的基本概念、核心特性和最佳实践，帮助你快速入门 Vue.js 3。

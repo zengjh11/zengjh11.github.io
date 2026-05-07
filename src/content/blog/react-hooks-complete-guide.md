@@ -3,7 +3,7 @@ title: "React Hooks完全指南"
 description: "深入学习React Hooks的基本概念、常用钩子和最佳实践。"
 date: 2024-03-01
 tags: ["React", "Hooks", "前端开发"]
-author: "博客作者"
+author: "zeng"
 ---
 
 React Hooks 是 React 16.8 版本引入的新特性，它允许你在不编写类组件的情况下使用状态和其他 React 特性。Hooks 的出现极大地简化了 React 组件的编写和理解，成为现代 React 开发的标准方式。

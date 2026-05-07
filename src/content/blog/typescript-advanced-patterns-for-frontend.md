@@ -3,7 +3,7 @@ title: "前端开发中的高级 TypeScript 模式：构建更健壮的应用"
 description: "探索如何在前端项目中利用 TypeScript 的高级特性，如条件类型、映射类型和泛型约束，以构建更健壮、可维护的应用。"
 date: 2026-01-24
 tags: ["typescript", "高级模式", "前端开发"]
-author: "博客作者"
+author: "zeng"
 ---
 
 TypeScript 不仅仅是 JavaScript 的类型超集，它更是一把强大的工具，能够帮助前端开发者构建出更具可维护性、可扩展性和鲁棒性的应用。除了基础类型和接口，TypeScript 还提供了一系列高级类型和模式，它们在复杂的前端场景中发挥着关键作用。本文将深入探讨一些高级 TypeScript 模式，助你将 TypeScript 的潜力发挥到极致。

@@ -3,7 +3,7 @@ title: "JavaScript异步编程：async/await详解"
 description: "深入学习JavaScript的async/await语法，掌握现代异步编程方式。"
 date: 2024-02-10
 tags: ["JavaScript", "异步编程", "async/await"]
-author: "博客作者"
+author: "zeng"
 ---
 
 JavaScript 是一门单线程语言，异步编程是其核心特性之一。随着 ES2017 的发布，async/await 语法的引入极大地简化了异步代码的编写和理解。

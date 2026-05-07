@@ -3,7 +3,7 @@ title: "Astro框架入门指南"
 description: "了解Astro框架的基本概念和使用方法。"
 date: 2024-01-20
 tags: ["astro", "前端框架", "静态站点生成"]
-author: "博客作者"
+author: "zeng"
 ---
 
 Astro 是一个现代化的前端框架，专为构建快速、高效的网站而设计。它提供了独特的"岛屿架构"（Islands Architecture），可以帮助开发者构建更快的网站。

@@ -3,7 +3,7 @@ title: "CSS Grid布局完全指南"
 description: "全面学习CSS Grid布局，掌握现代网页布局技术。"
 date: 2024-02-05
 tags: ["CSS", "Grid布局", "前端开发"]
-author: "博客作者"
+author: "zeng"
 ---
 
 CSS Grid 是一种强大的二维布局系统，允许开发者创建复杂的网页布局结构。它提供了精确控制行和列的能力，是现代前端开发中不可或缺的工具。

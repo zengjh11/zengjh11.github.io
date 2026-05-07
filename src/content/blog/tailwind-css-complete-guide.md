@@ -3,7 +3,7 @@ title: "Tailwind CSS完全指南"
 description: "学习Tailwind CSS的基本概念、核心特性和最佳实践。"
 date: 2024-03-05
 tags: ["Tailwind CSS", "CSS", "前端开发"]
-author: "博客作者"
+author: "zeng"
 ---
 
 Tailwind CSS 是一个实用优先的 CSS 框架，它提供了一套原子化的 CSS 类，可以帮助你快速构建现代、响应式的用户界面。本文将介绍 Tailwind CSS 的基本概念、核心特性和最佳实践，帮助你快速入门 Tailwind CSS。

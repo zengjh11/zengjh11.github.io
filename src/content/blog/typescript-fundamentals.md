@@ -3,7 +3,7 @@ title: "TypeScript基础入门"
 description: "学习TypeScript的基本语法、类型系统和核心特性。"
 date: 2024-03-02
 tags: ["TypeScript", "JavaScript", "前端开发"]
-author: "博客作者"
+author: "zeng"
 ---
 
 TypeScript 是 JavaScript 的超集，它添加了静态类型系统和其他高级特性，有助于提高代码质量和开发效率。本文将介绍 TypeScript 的基本语法、类型系统和核心特性，帮助你快速入门 TypeScript。
