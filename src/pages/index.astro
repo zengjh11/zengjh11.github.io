@@ -1,4 +1,4 @@
-﻿---
+---
 import MainLayout from "../layouts/MainLayout.astro";
 import BlogCard from "../components/BlogCard.astro";
 import { getCollection } from "astro:content";
@@ -41,7 +41,7 @@ const latestPosts = sortedPosts.slice(0, 5);
   </section>
 
   <section class="view-all">
-    <a href={`${import.meta.env.BASE_URL}blog`} class="btn">查看所有文章</a>
+    <a href="/blog" class="btn">查看所有文章</a>
   </section>
 </MainLayout>
 
